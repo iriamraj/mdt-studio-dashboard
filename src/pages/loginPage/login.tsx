@@ -2,19 +2,20 @@ import Header from "../../components/Header";
 
 export default function Login() {
 	return (
-		<div className="bg-background w-full h-dvh px-10 py-10">
+		<div className="bg-background w-full h-dvh px-[min(3vw,40px)] py-[min(3vw,40px)]">
 			<Header />
-			<div className="w-full flex items-center justify-center max-w-250 ml-auto mr-auto gap-30 mt-18">
-				<div className="w-1/2 flex flex-col gap-6 mb-30">
-					<h1 className="font-archivo text-56 font-extrabold">Dashboard</h1>
-					<p className="text-textMuted text-18 max-w-115.5 font-inter">
+			<div className="w-full flex items-center justify-center max-w-250 ml-auto mr-auto mt-5 flex-col gap-10 lg:flex-row xl:mt-18 xl:gap-30">
+				<div className="flex flex-col xl:w-1/2 items-center gap-3 xl:gap-6 lg:items-start lg:mb-30">
+					<h1 className="font-archivo text-4xl font-extrabold lg:text-56">Dashboard</h1>
+					<p className="hidden text-textMuted max-w-115.5 font-inter text-center text-14 lg:text-start lg:text-18 md:block">
 						Nisi do sunt veniam esse quis ex labore Lorem et. Excepteur labore minim ea
 						ea officia labore duis duis Lorem est tempor labore sint sint. Ipsum nostrud
 						velit et qu
 					</p>
 				</div>
-				<div className="w-1/2">
-					<div className="w-105 h-120 rounded-3xl border-boxBorder shadow-[0_0_5px_0.5px_#8b5cf633] p-8.25">
+
+				<div className="w-full sm:w-1/2">
+					<div className="rounded-3xl border-boxBorder shadow-[0_0_5px_0.5px_#8b5cf633] p-8.25 lg:w-105 lg:h-120">
 						<form action="" className="flex flex-col items-center font-inter">
 							<div className="w-full flex flex-col gap-1.75">
 								<label
@@ -27,7 +28,7 @@ export default function Login() {
 									id="emailAddress"
 									type="email"
 									placeholder="someone@gmai.com"
-									className="w-full h-12 rounded-xl border-2 border-boxBorder/50 outline-boxBorder/50 px-4 py-3"
+									className="w-full h-12 rounded-xl border-2 border-boxBorder/50 outline-boxBorder/50 px-4 py-3 text-[15px]"
 								/>
 							</div>
 							<div className="w-full flex flex-col gap-1.75 mt-5.25">
@@ -46,7 +47,7 @@ export default function Login() {
 									id="emailAddress"
 									type="password"
 									placeholder="********"
-									className="w-full h-12 rounded-xl border-2 border-boxBorder/50 outline-boxBorder/50 px-4 py-3"
+									className="w-full h-12 rounded-xl border-2 border-boxBorder/50 outline-boxBorder/50 px-4 py-3 text-[15px]"
 								/>
 							</div>
 
